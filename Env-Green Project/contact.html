@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="planet.png" type="image/x-icon">
+    <link rel="stylesheet"    href="style.css">
+    <title>Contact_Env-Green</title>
+
+  <style>
+
+      /*    Applies personal styles for the elements below in the contact pg */
+        .container
+         {
+          padding:29px;
+          margin-top: 18%;
+          backdrop-filter: blur(10px); /*Sets background to blur*/
+          -webkit-backdrop-filter: blur(10px);
+          background-size: cover;
+          width: 500px;
+          }
+            
+        input
+        {
+            display: block;
+         }
+
+       input[type=text] 
+          {
+            font-size: 21px;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 4px 22px 5px;
+            display: inline-block;
+            background: transparent;
+          }
+
+          textarea
+          {
+            width:100%;
+            height: 120px;
+          }
+
+          .submit
+          {
+            padding: 10px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+
+
+          hr{
+            margin: 7px;
+            }   
+            
+ </style>
+</head>
+<body>
+  <header>
+        <h2 class="logo_header">Env-Green </h2>
+          <img class="logo" src="planet.png" alt="hands holding the planet">
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="awareness.html" target="_blank">Awareness</a>
+                <a href="#"target="_blank">Talk To Us</a>
+            </nav>
+  </header>
+
+
+  <!-- This is a simple static form ,no database connected. -->
+  <form action="" >
+
+    <div class="container">
+      <h1 style="color: white; margin-bottom: 10px;">Talk To Us </h1><hr>
+
+      <label for="name" style="color: white;"><b>Name</b></label>
+      <input type="text" placeholder="Enter your name" name="name" id="name" required>
+  
+      <label for="email"style="color: white;"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  
+      <label for="subject"style="color: white;"><b>Subject</b></label><br>
+     <textarea name="" id=""></textarea>
+  
+      <input type="submit" value="Submit" class="submit" >
+    </div>
+
+  </form>
+
+</body>  
+</html>

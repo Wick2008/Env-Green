@@ -1,0 +1,239 @@
+/* Your existing code remains unchanged */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    margin-top: 12px;
+    left: 0;
+    padding: 20px 30px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 3%;
+    z-index: 99;
+    align-items: center;
+}
+
+footer{
+    position: fixed;
+    margin-top: 38%;
+} 
+
+img{
+    height: 59px;
+    margin-right: 580px;
+}
+
+h2{
+    font-size: 2em;
+    color: white;
+}
+
+.navigation a{
+    position: relative;
+    color: white;
+    margin-left: 40px;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navigation{
+    margin-right: 20px;
+}
+
+a::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scale(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+body{
+    display:flex;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(background.jpg) no-repeat;
+}
+
+.navigation a:hover::after{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.content p {
+    margin-top: 1%;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 21px;
+    border: 8px solid;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.content h1{
+    color: white;
+    margin-right: 10%;
+    font-size: 50px;
+}
+
+.logo_header{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    box-shadow: 
+        0 0 0px rgb(41, 138, 97),
+        0 0 10px rgb(17, 19, 18),
+        0 0 10px rgb(12, 12, 12),
+        0 0 20px rgb(19, 40, 63),
+        0 0 0px cyan;
+}
+
+.typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    animation: typing 4s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.content{
+    margin-top: 55px;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 15px; 
+        margin-top: 0; 
+        top: 0; 
+    }
+
+    /* Navigation adjustments */
+    .navigation a {
+        margin-left: 10px; 
+        font-size: 1.2em; 
+    }
+
+    /* Image adjustments */
+    img {
+        height: 40px; 
+        margin-right: 0; 
+        display: block; 
+        margin: 0 auto; 
+    }
+
+   
+    .content p {
+        width: 90%; 
+        margin: 0 auto; 
+        font-size: 1.4em; 
+    }
+
+    .content h1 {
+        font-size: 40px; 
+        margin-right: 0;
+        text-align: center; 
+    }
+
+   
+    .typewriter {
+        font-size: 20px; 
+    }
+}
+
+/* Additional adjustments for smaller mobile screens */
+@media (max-width: 480px) {
+   
+    .navigation a {
+        font-size: 1em; 
+    }
+
+   
+    .content p {
+        font-size: 1.2em;
+    }
+
+    .content h1 {
+        font-size: 35px; 
+    }
+
+    
+    img {
+        height: 35px; 
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .content p {
+        font-size: 1em; 
+    }
+
+    .content h1 {
+        font-size: 30px; 
+    }
+
+   
+    img {
+        height: 30px; 
+    }
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        padding: 10px 15px; /* Reduced padding for smaller screens */
+        margin-top: 0; /* Remove top margin */
+        top: 0; /* Ensure header stays at the top */
+    }
+
+    /* Navigation adjustments */
+    .navigation {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center the links */
+        text-align: center; /* Center text */
+        margin-right: 0; /* Remove margin */
+        padding: 8px; /* Add padding around links */
+    }
+
+    .navigation a {
+        display: block; /* Ensure links stack vertically */
+        margin: 4px 0; /* Add spacing between links */
+        font-size: 1.4em; /* Smaller font size for mobile */
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,12 @@
+Author:Vicenzo Male @Wick2008
+
+This project is a breakthrough to positive climate change through its impact on media.
+ Env-Green is  all about environmental awareness.
+
+ This website briefly outlines some of the major causes of environmental pollution
+ through various ways as mentioned in the awarenss page.
+
+ The website can as  per now be run on desktops only , but eventually will soon be made mobile responsive.
+
+
+
